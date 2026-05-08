@@ -3,11 +3,11 @@ import UserTable from "../components/userTable";
 
 const UsersPage =  async () => { 
         const users = await getUserData()
-        console.log(users);
+        console.log("get Data",users);
        
             return <div>
             <h2>User Management </h2>
-            <UserTable key={users._id} users={users}></UserTable>
+            <UserTable users={users}></UserTable>
         </div>
 
 };
